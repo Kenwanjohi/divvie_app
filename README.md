@@ -1,24 +1,12 @@
-# README
+# DivvieApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An expenses sharing and tracking application - Written in Rails
 
-Things you may want to cover:
+## Why
 
-* Ruby version
+For learning Ruby on Rails.
 
-* System dependencies
+Using:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Hotwire- Turbo, Stimulus
+- Vite- Vite_ruby & plugins
