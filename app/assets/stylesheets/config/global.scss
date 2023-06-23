@@ -1,0 +1,79 @@
+:root {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  /* 10px */
+  font-size: 62.5%;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  // Classical and robust font sizes system
+  --font-size-xs: 1.2rem; // 12px
+  --font-size-s: 1.4rem; // 14px
+  --font-size-m: 1.6rem; // 16px
+  --font-size-l: 1.8rem; // 18px
+  --font-size-xl: 2rem; // 20px
+  --font-size-xxl: 2.4rem; // 24px
+  --font-size-xxxl: 3.2rem; // 32px
+  --font-size-xxxxl: 4rem; // 40px
+
+  // colors
+  --color-brand: #e1f244;
+  --color-grey-100: #edf2f7;
+  --color-grey-200: #e2e8f0;
+
+  --primary-color: #fff;
+  --primary-light-color: #fafafa;
+  --primary-dark-color: #f5f5f5;
+  --primary-contrast-color: #fefefe;
+  --secondary-color: #6c6c6c;
+  --secondary-light-color: #a3a3a3;
+  --secondary-dark-color: #141414;
+  --color-error: #ee0000;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  /* 14px */
+  font-size: 1.4rem;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #141414;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+a:link,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}

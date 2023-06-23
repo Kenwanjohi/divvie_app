@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@hotwired/stimulus": "^3.2.1",
+    "sass": "^1.63.6",
+    "stimulus-vite-helpers": "^3.0.1",
+    "vite": "^4.3.9",
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-ruby": "^3.2.2"
+  },
+  "dependencies": {
+    "vite-plugin-stimulus-hmr": "^3.0.0"
+  }
+}
