@@ -1,0 +1,48 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  outline: 2px solid transparent;
+  background-color: transparent;
+  outline-offset: 2px;
+  line-height: 1.2;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  height: 3.3rem;
+  font-size: 1.2rem;
+  padding: 0 1.6rem;
+  border: none;
+  width: 100%;
+
+  &--outline {
+    border: 0.1rem solid var(--color-grey-100);
+    &:hover {
+      background-color: var(--color-grey-200);
+    }
+  }
+  &--solid {
+    background-color: var(--color-grey-100);
+    &:hover {
+      background-color: var(--color-grey-200);
+    }
+  }
+  &--brand {
+    background-color: var(--color-brand);
+    &:hover {
+      background-color: var(--color-brand);
+      filter: brightness(90%);
+    }
+  }
+  &--submit {
+    border: none;
+  }
+  &__icon {
+    margin-right: 0.5rem;
+  }
+  &__text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}

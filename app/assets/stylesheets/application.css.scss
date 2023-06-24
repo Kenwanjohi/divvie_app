@@ -1,3 +1,8 @@
 @import "config/fonts.scss";
+@import "mixins/mixins";
 @import "config/global.scss";
 @import "pages/landing.scss";
+@import "pages/users_new.scss";
+@import "components/form/label.scss";
+@import "components/form/input.scss";
+@import "components/button.scss"
