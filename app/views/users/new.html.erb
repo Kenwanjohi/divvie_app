@@ -3,28 +3,8 @@
     <h1 class="logo">DivvieApp</h1>
   </section>
   <section class="formContainer" >
-    <%= form_with model:@user, url: sign_up_path do |form|%>
-      <div class="formControl" >
-        <%= form.label :first_name, class: "label"%>
-        <%= form.text_field :first_name, class: "input"%>
-      </div>
-      <div class="formControl">
-        <%= form.label :last_name, class: "label"%>
-        <%= form.text_field :last_name, class: "input"%>
-      </div>
-      <div class="formControl">
-        <%= form.label :email, class: "label"%>
-        <%= form.email_field :email, class: "input"%>
-      </div>
-      <div class="formControl">
-        <%= form.label :password, class: "label"%>
-        <%= form.password_field :password, class: "input"%>
-      </div>
-      <div class="formControl">
-        <%= form.label :password_confirmation, class: "label"%>
-        <%= form.password_field :password_confirmation, class: "input"%>
-      </div>
-      <%= form.submit "Create Account", class: "btn btn--brand btn--submit"%>
+    <%= turbo_frame_tag "signin_signup_turbo_frame" do%>
+      <%= render "signup", user: @user%>
     <%end%>
   </section>
 </main>

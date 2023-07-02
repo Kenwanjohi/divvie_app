@@ -1,0 +1,26 @@
+<main class="showcase" >
+  <div class="showcase__left" >
+    <h1 class="showcase__heading">Simplify Expense Sharing and Split Costs with Ease</h1>
+    <p class="showcase__description">The Convenient Way to Manage Shared Expenses and Balances with Roommates, Friends, Relatives, and More</p>
+    <%= turbo_frame_tag "signup_turbo_frame" do%>
+      <div class="showcase__btn" >
+        <%= link_to sign_up_path, class:"btn btn--brand",  data: { turbo_frame: "signin_signup_turbo_frame" }  do %>
+          <span class="btn__icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span>
+          <span  class="btn__text">Get Started</span>
+        <%end%>
+      </div>
+    <%end%>
+    <%= turbo_frame_tag "signin_turbo_frame" do%>
+      <p class="showcase__hyperlink-prefix">
+        Already using Divvyapp? <%= link_to "Log In", sign_in_path, data: { turbo_frame: "signin_signup_turbo_frame" }, class: "showcase__hyperlink" %>
+      </p>
+    <%end%>
+  </div>
+  <div class="showcase__right" >
+    <div class="showcase__form" >
+      <%= turbo_frame_tag "signin_signup_turbo_frame" do%>
+        <%= render "users/signup", user: @user%>
+      <%end%>
+    </div>
+  </div>
+</main>
